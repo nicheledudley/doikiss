@@ -450,9 +450,15 @@
                 for priority access to the new dimension.
             </p>
             
-            <form class="notify-form" id="notifyForm">
-    <input type="email" name="email" placeholder="ENTER_EMAIL_ADDRESS" required>
-    <button type="submit">CONNECT</button>
+            <<form 
+  class="notify-form" 
+  id="notifyForm"
+  name="notify"
+  method="POST"
+  data-netlify="true"
+>
+  <input type="email" name="email" placeholder="ENTER_EMAIL_ADDRESS" required>
+  <button type="submit">CONNECT</button>
 </form>
 
 <script>
