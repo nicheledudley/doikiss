@@ -450,13 +450,19 @@
                 for priority access to the new dimension.
             </p>
             
-            <<form 
+            <form 
   class="notify-form" 
-  id="notifyForm"
   name="notify"
   method="POST"
   data-netlify="true"
+  netlify-honeypot="bot-field"
 >
+  <!-- Hidden fields required by Netlify -->
+  <input type="hidden" name="form-name" value="notify">
+  <p style="display: none;">
+    <label>Don't fill this out: <input name="bot-field" /></label>
+  </p>
+  
   <input type="email" name="email" placeholder="ENTER_EMAIL_ADDRESS" required>
   <button type="submit">CONNECT</button>
 </form>
